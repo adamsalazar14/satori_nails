@@ -1,4 +1,12 @@
 /* Variables basadas en tu paleta de colores */
+/* Fuente para el título principal (Satori) */
+@font-face {
+    font-family: 'SatoriLogo';
+    src: url('fonts/satori-bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
 :root {
     --blanco-crema: #f9f7f2;   /* El tono más claro de tu paleta */
     --beige-claro: #e9e2d5;    /* Fondo suave */
@@ -29,14 +37,14 @@ header {
 }
 
 header h1 {
-    font-family: 'Against' ;
+    font-family: 'SatoriLogo' ;
     font-size: 5rem;
     color: var(--taupe-oscuro);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .eslogan {
-    font-family: 'Boge';
+    font-family: 'boge';
     font-size: 1.5rem;
     margin-top: -1.5rem;
     color: var(--taupe-oscuro);
