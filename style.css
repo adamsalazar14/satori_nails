@@ -1,0 +1,132 @@
+/* Variables basadas en tu paleta de colores */
+:root {
+    --blanco-crema: #f9f7f2;   /* El tono más claro de tu paleta */
+    --beige-claro: #e9e2d5;    /* Fondo suave */
+    --taupe-medio: #c9bcab;    /* Color de acento para bordes */
+    --taupe-oscuro: #9b8d7a;   /* Color para textos y botones */
+    --texto-principal: #4a443c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--blanco-crema);
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
+
+/* Encabezado Estético */
+header {
+    background-color: var(--beige-claro);
+    padding: 4rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--taupe-medio);
+}
+
+header h1 {
+    font-family: 'Against' ;
+    font-size: 5rem;
+    color: var(--taupe-oscuro);
+    letter-spacing: 2px;
+}
+
+.eslogan {
+    font-family: 'Boge';
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+    color: var(--taupe-oscuro);
+}
+
+/* Grid del Catálogo */
+.contenedor {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;    /* Aumenta el espacio arriba del título para separar secciones */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+/* Tarjetas de Servicio */
+.tarjeta {
+    background: white;
+    border: 1px solid var(--beige-claro);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.imagen-placeholder {
+    background-color: var(--taupe-medio);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+    /* Cuando tengas tus fotos reales, usa object-fit: cover; */
+}
+
+.info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.info h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+    color: var(--taupe-oscuro);
+}
+
+.precio {
+    display: block;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--taupe-oscuro);
+}
+
+/* Botón de Acción */
+.btn {
+    display: inline-block;
+    background-color: var(--taupe-oscuro);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #7d7061; /* Un tono más oscuro para el hover */
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: var(--taupe-oscuro);
+    margin-top: 4rem;
+}
