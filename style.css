@@ -131,6 +131,18 @@ header h1 {
     background-color: #7d7061; /* Un tono más oscuro para el hover */
 }
 
+.nota-decoracion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--taupe-oscuro); /* Color de tu paleta */
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border-top: 1px dashed var(--taupe-claro); /* Una línea punteada muy fina */
+    opacity: 0.8;
+}
+
 footer {
     text-align: center;
     padding: 2rem;
