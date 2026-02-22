@@ -3,71 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SATORI NAILS STUDIO - Catálogo</title>
+    <title>Satori Nails Studio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
+<header class="hero">
+    <div class="hero-texto">
         <h1>Satori</h1>
-        <p class="eslogan">Nails Estudio</p>
-    </header>
-    <div class="contenedor">
-        <p class="nota-precios">Nota: El precio varía dependiendo de la complejidad de la decoración, conforme a su diseño requerido.</p>
+        <p class="eslogan">Nails Studio</p>
+        <p class="descripcion">
+            Belleza consciente, diseño delicado y cuidado profesional.
+        </p>
+        <a href="#catalogo" class="btn-hero">Ver catálogo</a>
     </div>
-    <main class="contenedor">
+</header>
+
+<main class="contenedor" id="catalogo">
+
+    <section class="bloque">
         <h2 class="titulo-seccion">Servicios de Manos</h2>
         <div class="grid-catalogo">
-            <div class="tarjeta"><div class="info"><h3>Gel Francés Manos</h3><p class="precio">$220.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Gel Manos</h3><p class="precio">$180.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Retoque de Vitamina</h3><p class="precio">$180.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Retoque Vitamina Color</h3><p class="precio">$180.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Vitamina Color</h3><p class="precio">$220.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Vitamina Transparente</h3><p class="precio">$180.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Polygel sobre la Uña</h3><p class="precio">$350.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Soft Gel Transparente</h3><p class="precio">$250.0</p></div></div>
-
+            <div class="tarjeta"><h3>Gel Francés Manos</h3><span>$220.00</span></div>
+            <div class="tarjeta"><h3>Gel Manos</h3><span>$180.00</span></div>
+            <div class="tarjeta"><h3>Retoque de Vitamina</h3><span>$180.00</span></div>
+            <div class="tarjeta"><h3>Retoque Vitamina Color</h3><span>$180.00</span></div>
+            <div class="tarjeta"><h3>Vitamina Color</h3><span>$220.00</span></div>
+            <div class="tarjeta"><h3>Vitamina Transparente</h3><span>$180.00</span></div>
+            <div class="tarjeta"><h3>Polygel sobre la Uña</h3><span>$350.00</span></div>
+            <div class="tarjeta"><h3>Soft Gel Transparente</h3><span>$250.00</span></div>
         </div>
+    </section>
 
+    <section class="imagen-editorial izquierda">
+        <img src="images/uñas1.jpeg" alt="Diseño de uñas elegante">
+        <div class="texto-editorial">
+            <h3>Detalles que marcan la diferencia</h3>
+            <p>
+                Diseños delicados que resaltan la belleza natural
+                con un acabado profesional y personalizado.
+            </p>
+        </div>
+    </section>
+
+    <section class="bloque bloque-alterno">
         <h2 class="titulo-seccion">Spa & Cuidado</h2>
         <div class="grid-catalogo">
-            <div class="tarjeta"><div class="info"><h3>Manicure Spa</h3><p class="precio">$250.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Cambio de Esmalte</h3><p class="precio">$110.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Corte de Uñas</h3><p class="precio">$60.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Manicure Express</h3><p class="precio">$120.0</p></div></div>
-            <!-- <div class="tarjeta"><div class="info"><h3>Paquete Manicure + Pedicure</h3><p class="precio">$539.0</p></div></div> -->
+            <div class="tarjeta"><h3>Manicure Spa</h3><span>$250.00</span></div>
+            <div class="tarjeta"><h3>Cambio de Esmalte</h3><span>$110.00</span></div>
+            <div class="tarjeta"><h3>Corte de Uñas</h3><span>$60.00</span></div>
+            <div class="tarjeta"><h3>Manicure Express</h3><span>$120.00</span></div>
         </div>
+    </section>
 
+    <section class="imagen-editorial derecha">
+        <img src="images/herramientas.jpeg" alt="Herramientas profesionales de manicure">
+        <div class="texto-editorial">
+            <h3>Cuidado profesional</h3>
+            <p>
+                Procesos cuidadosos, herramientas especializadas
+                y enfoque en higiene y bienestar.
+            </p>
+        </div>
+    </section>
+
+    <section class="bloque">
         <h2 class="titulo-seccion">Acrílicos</h2>
         <div class="grid-catalogo">
-            <div class="tarjeta"><div class="info"><h3>Acrílico Escultural Color</h3><p class="precio">$450.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Acrílico Escultural Tran.</h3><p class="precio">$370.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Acrílico Tip de Color</h3><p class="precio">$350.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Acrílico Tip Transparente</h3><p class="precio">$290.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Babyboomer con Tip</h3><p class="precio">$400.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Babyboomer Escultural</h3><p class="precio">$500.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Babyboomer sobre Uña Natural</h3><p class="precio">$300.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Baño de Acrílico</h3><p class="precio">$250.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Retiro de Acrílico</h3><p class="precio">$150.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Retoque de Acrílico</h3><p class="precio">$180.0</p></div></div>
+            <div class="tarjeta"><h3>Acrílico Escultural Color</h3><span>$450.00</span></div>
+            <div class="tarjeta"><h3>Acrílico Escultural Transparente</h3><span>$370.00</span></div>
+            <div class="tarjeta"><h3>Acrílico Tip de Color</h3><span>$350.00</span></div>
+            <div class="tarjeta"><h3>Acrílico Tip Transparente</h3><span>$290.00</span></div>
+            <div class="tarjeta"><h3>Babyboomer con Tip</h3><span>$400.00</span></div>
+            <div class="tarjeta"><h3>Babyboomer Escultural</h3><span>$500.00</span></div>
+            <div class="tarjeta"><h3>Babyboomer sobre Uña Natural</h3><span>$300.00</span></div>
+            <div class="tarjeta"><h3>Baño de Acrílico</h3><span>$250.00</span></div>
+            <div class="tarjeta"><h3>Retiro de Acrílico</h3><span>$150.00</span></div>
+            <div class="tarjeta"><h3>Retoque de Acrílico</h3><span>$180.00</span></div>
         </div>
+    </section>
 
-        <h2 class="titulo-seccion">Pies</h2>
+    <section class="bloque bloque-alterno">
+        <h2 class="titulo-seccion">Servicios de Pies</h2>
         <div class="grid-catalogo">
-            <div class="tarjeta"><div class="info"><h3>Gel en Pies</h3><p class="precio">$140.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Gel Pies Francés</h3><p class="precio">$180.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Pedicure Spa</h3><p class="precio">$350.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Retoque de Acripié</h3><p class="precio">$160.0</p></div></div>
-            <div class="tarjeta"><div class="info"><h3>Acripié</h3><p class="precio">$250.0</p></div></div>
+            <div class="tarjeta"><h3>Gel en Pies</h3><span>$140.00</span></div>
+            <div class="tarjeta"><h3>Gel Pies Francés</h3><span>$180.00</span></div>
+            <div class="tarjeta"><h3>Pedicure Spa</h3><span>$350.00</span></div>
+            <div class="tarjeta"><h3>Retoque de Acripié</h3><span>$160.00</span></div>
+            <div class="tarjeta"><h3>Acripié</h3><span>$250.00</span></div>
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <p>SATORI NAILS ESTUDIO &copy; 2026</p>
-        <p>Un espacio de paz para tu belleza</p>
-        <p> whatsApp: +52 777-240-59-73 </p>
-    </footer>
+</main>
+
+<footer class="footer">
+    <p class="nota-footer">
+        Nota: El precio puede variar dependiendo de la complejidad de la decoración,
+        conforme al diseño requerido.
+    </p>
+    <p>SATORI NAILS STUDIO © 2026</p>
+    <p>Un espacio de paz para tu belleza</p>
+</footer>
 
 </body>
 </html>

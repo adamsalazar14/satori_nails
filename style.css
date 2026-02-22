@@ -1,17 +1,13 @@
-/* Variables basadas en tu paleta de colores */
-/* Fuente para el título principal (Satori) */
 @font-face {
     font-family: 'SatoriLogo';
     src: url('fonts/satori-bold.ttf') format('truetype');
-    font-weight: bold;
 }
 
-
 :root {
-    --blanco-crema: #f9f7f2;   /* El tono más claro de tu paleta */
-    --beige-claro: #e9e2d5;    /* Fondo suave */
-    --taupe-medio: #c9bcab;    /* Color de acento para bordes */
-    --taupe-oscuro: #9b8d7a;   /* Color para textos y botones */
+    --blanco-crema: #f9f7f2;
+    --beige-claro: #e9e2d5;
+    --taupe-medio: #c9bcab;
+    --taupe-oscuro: #9b8d7a;
     --texto-principal: #4a443c;
 }
 
@@ -25,128 +21,177 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--blanco-crema);
     color: var(--texto-principal);
-    line-height: 1.6;
 }
 
-/* Encabezado Estético */
-header {
-    background-color: var(--beige-claro);
-    padding: 4rem 1rem;
-    text-align: center;
-    border-bottom: 1px solid var(--taupe-medio);
-}
-
-header h1 {
-    font-family: 'SatoriLogo' ;
-    font-size: 5rem;
-    color: var(--taupe-oscuro);
-    letter-spacing: 1px;
-}
-
-.eslogan {
-    font-family: 'boge';
-    font-size: 1.5rem;
-    margin-top: -1.5rem;
-    color: var(--taupe-oscuro);
-}
-
-/* Grid del Catálogo */
-.contenedor {
-    max-width: 1100px;
-    margin: 3rem auto;
-    padding: 0 1rem;
-}
-
-.titulo-seccion {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    margin-top: 2rem;    /* Aumenta el espacio arriba del título para separar secciones */
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-
-.grid-catalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-}
-
-/* Tarjetas de Servicio */
-.tarjeta {
-    background: white;
-    border: 1px solid var(--beige-claro);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tarjeta:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-}
-
-.imagen-placeholder {
-    background-color: var(--taupe-medio);
-    height: 250px;
+.hero {
+    background:
+        linear-gradient(rgba(249,247,242,0.92), rgba(249,247,242,0.92)),
+        url("images/unas-3.jpg") center/cover no-repeat;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-style: italic;
-    /* Cuando tengas tus fotos reales, usa object-fit: cover; */
-}
-
-.info {
-    padding: 1.5rem;
     text-align: center;
 }
 
-.info h3 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 0.5rem;
+.hero-texto {
+    padding: 3rem 2.5rem;
+}
+
+.hero h1 {
+    font-family: 'SatoriLogo', 'Playfair Display', serif;
+    font-size: 4.5rem;
     color: var(--taupe-oscuro);
 }
 
-.precio {
-    display: block;
-    margin: 1rem 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--taupe-oscuro);
+.eslogan {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: -0.5rem;
 }
 
-/* Botón de Acción */
-.btn {
+.descripcion {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.btn-hero {
     display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 30px;
     background-color: var(--taupe-oscuro);
     color: white;
-    padding: 0.8rem 1.5rem;
     text-decoration: none;
-    border-radius: 4px;
     font-size: 0.9rem;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #7d7061; /* Un tono más oscuro para el hover */
+.btn-hero:hover {
+    background-color: #7d7061;
+    transform: translateY(-2px);
 }
 
-.nota-decoracion {
-    font-family: 'Montserrat', sans-serif;
+/* CONTENEDOR */
+.contenedor {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+/* BLOQUES */
+.bloque {
+    margin-top: 4.5rem;
+}
+
+.bloque-alterno {
+    background-color: var(--beige-claro);
+    padding: 3.5rem 2rem;
+    border-radius: 18px;
+}
+
+/* TITULOS */
+.titulo-seccion {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    color: var(--taupe-oscuro);
+}
+
+/* GRID */
+.grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    text-align: center;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.08);
+}
+
+.tarjeta h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.7rem;
+}
+
+.tarjeta span {
+    font-weight: 600;
+    color: var(--taupe-oscuro);
+}
+
+/* IMÁGENES EDITORIALES */
+.imagen-editorial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin: 6rem 0;
+}
+
+.imagen-editorial img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.texto-editorial h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.texto-editorial p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ALTERNAR */
+.imagen-editorial.izquierda img { order: 1; }
+.imagen-editorial.izquierda .texto-editorial { order: 2; }
+.imagen-editorial.derecha img { order: 2; }
+.imagen-editorial.derecha .texto-editorial { order: 1; }
+
+/* FOOTER */
+.footer {
+    margin-top: 5rem;
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+    background-color: var(--beige-claro);
+    color: var(--taupe-oscuro);
+}
+
+.nota-footer {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
     font-size: 0.85rem;
     font-style: italic;
-    color: var(--taupe-oscuro); /* Color de tu paleta */
-    text-align: center;
-    margin-top: 3rem;
-    padding: 1.5rem;
-    border-top: 1px dashed var(--taupe-claro); /* Una línea punteada muy fina */
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.8rem;
-    color: var(--taupe-oscuro);
-    margin-top: 4rem;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .imagen-editorial {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .imagen-editorial img {
+        height: 300px;
+    }
 }
