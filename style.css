@@ -195,3 +195,41 @@ body {
         height: 300px;
     }
 }
+
+/* FIX TEXTO UBICACIÓN */
+.ubicacion-texto {
+    display: block;
+    color: var(--texto-principal);
+  }
+  
+  .ubicacion-texto h2 {
+    color: var(--taupe-oscuro);
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .ubicacion-texto p {
+    color: var(--texto-principal);
+    opacity: 1;
+  }
+
+/* WHATSAPP EN FOOTER */
+.footer-contacto {
+    margin-top: 1.5rem;
+  }
+  
+  .footer-whatsapp {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    background-color: var(--taupe-oscuro);
+    color: white;
+    text-decoration: none; /* QUITA estilo de link */
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-whatsapp:hover {
+    background-color: #7d7061;
+    transform: translateY(-2px);
+  }
